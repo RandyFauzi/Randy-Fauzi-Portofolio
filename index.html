@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Default bahasa diset ke English -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achmad Randy - Portfolio</title>
+    <link rel="icon" type="image/webp" href="assets/Pavico%20Randy.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="ochi-theme">
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-text" id="cursor-text">
+        <span class="lang-en">VIEW</span>
+        <span class="lang-id">LIHAT</span>
+    </div>
+
+    <!-- PRELOADER -->
+    <div id="preloader" class="ochi-preloader">
+        <div class="preloader-panel left-panel"></div>
+        <div class="preloader-panel right-panel"></div>
+        <div class="preloader-content">
+            <div class="threed-object-wrapper">
+                <div class="threed-object">
+                    <div class="shape-ring"></div>
+                    <div class="shape-ring"></div>
+                    <div class="shape-ring"></div>
+                    <div class="shape-core"></div>
+                </div>
+            </div>
+            <div class="preloader-text-wrapper">
+                <h1 class="loader-text">ACHMAD</h1>
+                <h1 class="loader-text">RANDY.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="ochi-nav">
+        <div class="logo">
+            <span>Achmad Randy.</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#portfolio" class="hover-target">
+                <span class="lang-en">Our Work</span>
+                <span class="lang-id">Karya Kami</span>
+            </a></li>
+            <li><a href="#about" class="hover-target">
+                <span class="lang-en">About</span>
+                <span class="lang-id">Tentang</span>
+            </a></li>
+            <li><a href="#experience" class="hover-target">
+                <span class="lang-en">Experience</span>
+                <span class="lang-id">Pengalaman</span>
+            </a></li>
+        </ul>
+        <div class="nav-actions">
+            <!-- Tombol Toggle Bahasa -->
+            <button id="lang-toggle" class="hover-target">ID</button>
+            <a href="assets/cv-ats-achmad-randy.pdf" target="_blank" class="hover-target">CV ATS</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="ochi-hero">
+        <div class="hero-content" style="position: relative;">
+            
+            <div class="hero-text-wrapper" style="position: relative; z-index: 1;">
+                <div class="heading-mask">
+                    <h1 class="lang-en">WE BUILD</h1>
+                    <h1 class="lang-id">KAMI BUAT</h1>
+                </div>
+                <div class="heading-mask inline-heading">
+                    <!-- Foto Anda bisa ditaruh di hero pill ini -->
+                    <div class="hero-image-pill" style="background-image: url('assets/images/profile.png'); background-position: center 15%;"></div>
+                    <h1 class="lang-en">DIGITAL</h1>
+                    <h1 class="lang-id">KARYA</h1>
+                </div>
+                <div class="heading-mask">
+                    <h1 class="lang-en">MASTERPIECES</h1>
+                    <h1 class="lang-id">DIGITAL</h1>
+                </div>
+            </div>
+
+            <!-- Floating Collage Area Kanan (Tampil seperti referensi 2D/3D mengambang) -->
+            <div class="hero-collage hidden-mobile">
+                <!-- Card 1 (Tengah Atas Kiri) -->
+                <div class="fc-card fc-card-1 project-hover" style="background-image: url('assets/images/hero-img1.png'); background-position: left center;"></div>
+                <!-- Card 2 (Kanan Atas) -->
+                <div class="fc-card fc-card-2 project-hover" style="background-image: url('assets/images/hero-img2.png'); background-position: center;"></div>
+                <!-- Card 3 (Bawah Kiri) -->
+                <div class="fc-card fc-card-3 project-hover" style="background-image: url('assets/images/hero-img3.png'); background-position: top center;"></div>
+                
+                <!-- Glass Overlay Panel -->
+                <div class="fc-glass">
+                    <ul>
+                        <li class="lang-en">System Automation</li>
+                        <li class="lang-id">Otomatisasi Sistem</li>
+                        <li class="lang-en">Web Development</li>
+                        <li class="lang-id">Pengembangan Web</li>
+                        <li class="lang-en">UI/UX Design</li>
+                        <li class="lang-id">Desain UI/UX</li>
+                    </ul>
+                </div>
+
+                <!-- Round Badge -->
+                <div class="fc-badge">
+                    <span class="year">2026</span>
+                    <span class="text lang-en">Selected<br>Works</span>
+                    <span class="text lang-id">Karya<br>Pilihan</span>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="hero-footer">
+            <p class="lang-en">For Corporate & Startups</p>
+            <p class="lang-id">Untuk Korporat & Startup</p>
+            
+            <p class="lang-en">From System Automation to UI/UX Design</p>
+            <p class="lang-id">Dari Sistem Otomatisasi hingga Desain UI/UX</p>
+            
+            <div class="hero-btn-wrapper">
+                <a href="#portfolio" class="ochi-btn hover-target">
+                    <span class="lang-en">START THE PROJECT</span>
+                    <span class="lang-id">MULAI PROYEKNYA</span>
+                    <span class="arrow">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE SECTION -->
+    <section class="ochi-marquee">
+        <div class="marquee-wrapper">
+            <div class="marquee-content lang-en">
+                <h2>WEB DEVELOPMENT <span>—</span> UI/UX DESIGN <span>—</span> SYSTEM AUTOMATION <span>—</span> GRAPHIC DESIGN <span>—</span></h2>
+                <h2>WEB DEVELOPMENT <span>—</span> UI/UX DESIGN <span>—</span> SYSTEM AUTOMATION <span>—</span> GRAPHIC DESIGN <span>—</span></h2>
+            </div>
+            <div class="marquee-content lang-id">
+                <h2>PENGEMBANGAN WEB <span>—</span> DESAIN UI/UX <span>—</span> OTOMATISASI SISTEM <span>—</span> DESAIN GRAFIS <span>—</span></h2>
+                <h2>PENGEMBANGAN WEB <span>—</span> DESAIN UI/UX <span>—</span> OTOMATISASI SISTEM <span>—</span> DESAIN GRAFIS <span>—</span></h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / INTRO SECTION -->
+    <section class="ochi-about" id="about">
+        <div class="about-top-text">
+            <h2 class="lang-en">Achmad Randy is a hybrid IT Professional bridging corporate operational needs with tech solutions, ranging from tactical data automation to instructional visual media.</h2>
+            <h2 class="lang-id">Achmad Randy adalah Profesional IT hibrida yang menjembatani kebutuhan operasional korporat dengan solusi teknologi, mulai dari otomatisasi data taktis hingga media visual instruksional.</h2>
+        </div>
+        
+        <div class="about-details border-top">
+            <div class="col">
+                <p class="lang-en expected-title">What you can expect:</p>
+                <p class="lang-id expected-title">Apa yang bisa Anda harapkan:</p>
+            </div>
+            <div class="col mid-col">
+                <div class="expect-item">
+                    <div class="expect-num">01</div>
+                    <div class="expect-text">
+                        <h4 class="lang-en">System Automation</h4>
+                        <h4 class="lang-id">Otomatisasi Sistem</h4>
+                        <p class="lang-en">We create robust web ecosystems from scratch (Laravel, Node.js) designed to handle high traffic and streamline corporate workflows.</p>
+                        <p class="lang-id">Merancang ekosistem web tangguh dari awal (Laravel, Node.js) yang dioptimalkan untuk menangani trafik tinggi dan menyederhanakan alur kerja korporat.</p>
+                    </div>
+                </div>
+                <div class="expect-item">
+                    <div class="expect-num">02</div>
+                    <div class="expect-text">
+                        <h4 class="lang-en">UI/UX Design</h4>
+                        <h4 class="lang-id">Desain UI/UX</h4>
+                        <p class="lang-en">We believe in the power of minimal, functional design that elevates brand awareness and pitching success for Corporate partners.</p>
+                        <p class="lang-id">Menghadirkan desain UI/UX minimalis dan fungsional yang mampu meningkatkan nilai kesadaran merek dan keberhasilan presentasi untuk mitra BUMN/Korporasi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col social-col">
+                <p class="social-title">S:</p>
+                <div class="social-pill-group">
+                    <a href="https://instagram.com/randyy_fzi" class="social-pill hover-target">Instagram <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/RandyFauzi" class="social-pill hover-target">GitHub <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://id.linkedin.com/in/achmad-randy-al-mugni-fauzi-129b17309" class="social-pill hover-target">LinkedIn <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-bottom border-top">
+            <div class="col left-col" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <h2 class="lang-en" style="margin-bottom: 20px;">My Profile:</h2>
+                    <h2 class="lang-id" style="margin-bottom: 20px;">Profil Saya:</h2>
+                </div>
+                <div style="margin-top: 40px; display: flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="assets/cv-ats-achmad-randy.pdf" target="_blank" class="ochi-btn dark-btn hover-target">
+                        <span class="lang-en">VIEW CV ATS</span>
+                        <span class="lang-id">LIHAT CV ATS</span>
+                        <span class="arrow">↗</span>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1dbb7-kDdECWUt6H4OjJLfTYa5kAjhtsH/view?usp=drive_link" target="_blank" class="ochi-btn outline-btn hover-target">
+                        <span class="lang-en">DESIGN PORTFOLIO</span>
+                        <span class="lang-id">PORTOFOLIO DESAIN</span>
+                        <span class="arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Tambahan kolom Bio & Statistik untuk mengisi area kosong -->
+            <div class="col mid-col" style="flex: 1.5; display: flex; flex-direction: column; justify-content: center;">
+                <p class="lang-en" style="font-size: 16px; font-weight: 500; margin-bottom: 40px; line-height: 1.6;">
+                    A Full-Stack Web Developer, Administrator, and Graphic Designer with a Bachelor's in Informatics Engineering. <br><br>With over 5 years of experience across creative and corporate industries, I specialize in building digital monitoring infrastructure, business process automation, and instructional visual media.
+                </p>
+                <p class="lang-id" style="font-size: 16px; font-weight: 500; margin-bottom: 40px; line-height: 1.6;">
+                    Seorang Full-Stack Web Developer, Administrator, dan Desainer Grafis bergelar S1 Teknik Informatika. <br><br>Memiliki 5+ tahun pengalaman di industri kreatif maupun korporat. Keahlian utama saya meliputi perancangan infrastruktur pemantauan digital, otomatisasi proses bisnis, dan media visual instruksional.
+                </p>
+                
+                <div class="profile-stats" style="display: flex; gap: 40px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 20px; flex-wrap: wrap;">
+                    <div>
+                        <h3 style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--dark-color);">5+</h3>
+                        <p class="lang-en" style="font-size: 12px; font-weight: 600; text-transform: uppercase; margin-top: 5px;">Years<br>Experience</p>
+                        <p class="lang-id" style="font-size: 12px; font-weight: 600; text-transform: uppercase; margin-top: 5px;">Tahun<br>Pengalaman</p>
+                    </div>
+                    <div>
+                        <h3 style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--dark-color);">S1</h3>
+                        <p class="lang-en" style="font-size: 12px; font-weight: 600; text-transform: uppercase; margin-top: 5px;">Informatics<br>Engineering</p>
+                        <p class="lang-id" style="font-size: 12px; font-weight: 600; text-transform: uppercase; margin-top: 5px;">Teknik<br>Informatika</p>
+                    </div>
+                    <div>
+                        <h3 style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--dark-color);">2</h3>
+                        <p class="lang-en" style="font-size: 12px; font-weight: 600; text-transform: uppercase; margin-top: 5px;">Startups<br>Founded</p>
+                        <p class="lang-id" style="font-size: 12px; font-weight: 600; text-transform: uppercase; margin-top: 5px;">Startup<br>Didirikan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col image-col" style="flex: 1.5;">
+                <!-- Disini foto profil dirender sesuai referensi desain -->
+                <div class="about-image" style="background-image: url('assets/images/profile.png'); background-position: center 10%; filter: grayscale(100%);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="ochi-portfolio" id="portfolio">
+        <div class="section-title border-bottom">
+            <h2 class="lang-en">Featured projects</h2>
+            <h2 class="lang-id">Proyek Unggulan</h2>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- Project 1 -->
+            <a href="https://on-fix.id" target="_blank" style="text-decoration: none; color: inherit;" class="portfolio-item hover-target project-hover">
+                <div class="item-header">
+                    <h3><span class="dot"></span> ONFIX (Smart Facility)</h3>
+                </div>
+                <div class="item-image-wrapper">
+                    <div class="item-image" style="background-image: url('assets/images/onfix.jpg'); background-size: cover; background-position: center; border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="item-tags">
+                    <span>LARAVEL</span>
+                    <span>NODE.JS</span>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="https://langitara.com" target="_blank" style="text-decoration: none; color: inherit;" class="portfolio-item hover-target project-hover">
+                <div class="item-header">
+                    <h3><span class="dot"></span> Langitara</h3>
+                </div>
+                <div class="item-image-wrapper">
+                    <div class="item-image" style="background-image: url('assets/images/langitara.jpg'); background-size: cover; background-position: center; border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="item-tags">
+                    <span>FULL-STACK</span>
+                    <span>UI/UX</span>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="https://unevaai.site" target="_blank" style="text-decoration: none; color: inherit;" class="portfolio-item hover-target project-hover">
+                <div class="item-header">
+                    <h3><span class="dot"></span> Uneva AI</h3>
+                </div>
+                <div class="item-image-wrapper">
+                    <div class="item-image" style="background-image: url('assets/images/uneva-ai.jpg'); background-size: cover; background-position: center; border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="item-tags">
+                    <span>WEB APP</span>
+                    <span>AI INTEGRATION</span>
+                </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="https://kamerakitaid.site" target="_blank" style="text-decoration: none; color: inherit;" class="portfolio-item hover-target project-hover">
+                <div class="item-header">
+                    <h3><span class="dot"></span> Kamera Kita ID</h3>
+                </div>
+                <div class="item-image-wrapper">
+                    <div class="item-image" style="background-image: url('assets/images/kamera-kita.jpg'); background-size: cover; background-position: center; border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="item-tags">
+                    <span>E-COMMERCE</span>
+                    <span>BOOKING SYSTEM</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Other Notable Works (List Format) -->
+        <div class="other-projects-section" style="margin-top: 80px; padding: 0 40px;">
+            <div class="section-title border-bottom" style="margin-bottom: 0; padding-bottom: 20px;">
+                <h3 class="lang-en" style="font-size: 32px; font-weight: 500;">Other Notable Works</h3>
+                <h3 class="lang-id" style="font-size: 32px; font-weight: 500;">Karya Web Lainnya</h3>
+            </div>
+            <div class="works-list">
+                <a href="https://younkis-house-courtpadel.autogrowthid.site" target="_blank" class="work-list-item hover-target">
+                    <div class="work-name">Younki's House Courtpadel</div>
+                    <div class="work-link">VIEW PROJECT ↗</div>
+                </a>
+                <a href="https://www.sunfm.co.id/" target="_blank" class="work-list-item hover-target">
+                    <div class="work-name">SUN FM</div>
+                    <div class="work-link">VIEW PROJECT ↗</div>
+                </a>
+                <a href="https://randyfauzi.github.io/GOODWILL-Coffee-Eatery/" target="_blank" class="work-list-item hover-target">
+                    <div class="work-name">GOODWILL Coffee Eatery</div>
+                    <div class="work-link">VIEW PROJECT ↗</div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="view-all-wrapper">
+            <a href="https://github.com/RandyFauzi" class="ochi-btn dark-btn hover-target">
+                <span class="lang-en">VIEW ALL PROJECTS</span>
+                <span class="lang-id">LIHAT SEMUA PROYEK</span>
+                <span class="arrow">↗</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- MILESTONE / AWARD -->
+    <section class="ochi-award bg-dark" id="experience">
+        <div class="award-content">
+            <h2 class="huge-text accent-text lang-en">NATIONAL AWARD</h2>
+            <h2 class="huge-text accent-text lang-id">PENGHARGAAN NASIONAL</h2>
+            
+            <p class="award-desc lang-en">Achieved through the implementation of the <strong>Promptif K3</strong> system which led the digitalization of department administration, proudly awarded by the Ministry of Energy and Mineral Resources of RI.</p>
+            <p class="award-desc lang-id">Diraih melalui implementasi sistem <strong>Promptif K3</strong> yang memimpin digitalisasi administrasi departemen, dipersembahkan oleh Kementerian ESDM RI.</p>
+        </div>
+    </section>
+
+    <!-- MODERN CARD FOOTER (Berdasarkan referensi Kresna) -->
+    <footer class="modern-footer">
+        <div class="footer-cards-container">
+            <!-- Left Card -->
+            <div class="footer-card-left bg-dark">
+                <div class="logo">
+                    <span class="accent-text">R</span> Randy.
+                </div>
+                <div class="left-bottom">
+                    <p class="lang-en" style="font-size: 18px; font-weight: 500; margin-bottom: 20px;">Driving digital innovation through system automation and creative design.</p>
+                    <p class="lang-id" style="font-size: 18px; font-weight: 500; margin-bottom: 20px;">Mendorong inovasi digital melalui otomatisasi sistem dan desain kreatif.</p>
+                    
+                    <div class="social-box">
+                        <span class="lang-en" style="font-family: Georgia, serif; font-style: italic; color: #999;">Stay in touch!</span>
+                        <span class="lang-id" style="font-family: Georgia, serif; font-style: italic; color: #999;">Tetap terhubung!</span>
+                        <div class="social-icons-box">
+                            <a href="https://github.com/RandyFauzi" class="hover-target"><i class="fab fa-github"></i></a>
+                            <a href="https://id.linkedin.com/in/achmad-randy-al-mugni-fauzi-129b17309" class="hover-target"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://instagram.com/randyy_fzi" class="hover-target"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Card -->
+            <div class="footer-card-right">
+                <div class="right-top-links">
+                    <div class="link-group">
+                        <h4 class="lang-en">Navigation</h4>
+                        <h4 class="lang-id">Navigasi</h4>
+                        <a href="#portfolio" class="lang-en hover-target">Our Work</a>
+                        <a href="#portfolio" class="lang-id hover-target">Karya Kami</a>
+                        <a href="#about" class="lang-en hover-target">About Me</a>
+                        <a href="#about" class="lang-id hover-target">Tentang Saya</a>
+                        <a href="#experience" class="lang-en hover-target">Experience</a>
+                        <a href="#experience" class="lang-id hover-target">Pengalaman</a>
+                    </div>
+                    <div class="link-group">
+                        <h4 class="lang-en">Connect</h4>
+                        <h4 class="lang-id">Sosial</h4>
+                        <a href="https://instagram.com/randyy_fzi" class="hover-target">Instagram</a>
+                        <a href="https://id.linkedin.com/in/achmad-randy-al-mugni-fauzi-129b17309" class="hover-target">LinkedIn</a>
+                        <a href="https://github.com/RandyFauzi" class="hover-target">GitHub</a>
+                        <a href="mailto:randyfauzi24@gmail.com" class="hover-target">Email</a>
+                    </div>
+                    <!-- Empty div for spacing padding visual -->
+                    <div class="link-group" style="flex:1;"></div>
+                </div>
+                
+                <div class="right-bottom">
+                    <div class="copyright">
+                        <p>© 2026 Achmad Randy. All rights reserved.</p>
+                    </div>
+                    <div class="subscribe-box">
+                        <p class="sub-title lang-en">Let's build something great.</p>
+                        <p class="sub-title lang-id">Mari bangun sesuatu yang hebat.</p>
+                        <h3 class="lang-en">Stay ahead with Randy.</h3>
+                        <h3 class="lang-id">Maju bersama Randy.</h3>
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter email address" class="lang-en" />
+                            <!-- Placeholder berbeda untuk versi indo, karena placeholder atribut, kita akali dengan JS ringan atau dua input terpisah -->
+                            <input type="email" placeholder="Masukkan alamat email" class="lang-id" style="display:none;" />
+                            <button class="lang-en hover-target">Connect</button>
+                            <button class="lang-id hover-target">Hubungi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-big-text">
+            <h1>RANDY.</h1>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
