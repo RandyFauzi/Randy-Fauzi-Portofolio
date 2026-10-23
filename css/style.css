@@ -996,13 +996,13 @@ html[lang="id"] .lang-en { display: none !important; }
 /* --- PURE 3D INTERACTIVE RUBIK'S CUBE HERO STAGE --- */
 .hero-cube-stage {
     position: absolute;
-    right: 0px;
-    top: -50px;
-    width: 650px;
-    height: 650px;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    width: 520px;
+    height: 520px;
     z-index: 10;
     pointer-events: auto !important;
-    transform: none !important;
     display: block;
 }
 
@@ -1013,7 +1013,7 @@ html[lang="id"] .lang-en { display: none !important; }
     height: 100%;
     z-index: 2;
     cursor: grab;
-    filter: drop-shadow(0 30px 45px rgba(15, 23, 42, 0.25));
+    filter: drop-shadow(0 20px 30px rgba(15, 23, 42, 0.20));
 }
 
 #heroCubeCanvas:active {
@@ -1031,19 +1031,17 @@ html[lang="id"] .lang-en { display: none !important; }
 
 @media (max-width: 1200px) {
     .hero-cube-stage {
-        width: 520px;
-        height: 520px;
-        right: -20px;
-        top: -30px;
+        width: 440px;
+        height: 440px;
+        right: 15px;
     }
 }
 
 @media (max-width: 900px) {
     .hero-cube-stage {
-        width: 440px;
-        height: 440px;
-        right: -10px;
-        top: 0px;
+        width: 380px;
+        height: 380px;
+        right: 10px;
     }
 }
 
@@ -1052,8 +1050,9 @@ html[lang="id"] .lang-en { display: none !important; }
         position: relative !important;
         right: auto !important;
         top: auto !important;
+        transform: none !important;
         width: 100% !important;
-        height: 380px !important;
+        height: 350px !important;
         margin-top: 20px;
     }
 }
