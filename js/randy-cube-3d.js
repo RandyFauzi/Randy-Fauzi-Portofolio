@@ -847,7 +847,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let worldRotX = 0.48;
   let worldRotY = -0.62;
   let worldRotZ = -0.52;
-  let camZoom = 7.4;
+  let camZoom = 5.3; // Closer camera zoom for large, bold hero cube display
 
   let isOrbiting = false;
   let isDraggingSlice = false;
@@ -1112,13 +1112,13 @@ document.addEventListener('DOMContentLoaded', () => {
   function resizeCanvas() {
     const rect = glCanvas.parentElement.getBoundingClientRect();
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    const w = Math.max(300, rect.width);
-    const h = Math.max(300, rect.height);
-    glCanvas.width = w * dpr;
-    glCanvas.height = h * dpr;
+    const w = Math.max(300, rect.width || 600);
+    const h = Math.max(300, rect.height || 600);
+    glCanvas.width = Math.round(w * dpr);
+    glCanvas.height = Math.round(h * dpr);
     gl.viewport(0, 0, glCanvas.width, glCanvas.height);
-    pCanvas.width = w;
-    pCanvas.height = h;
+    pCanvas.width = Math.round(w);
+    pCanvas.height = Math.round(h);
   }
 
   window.addEventListener('resize', resizeCanvas);
