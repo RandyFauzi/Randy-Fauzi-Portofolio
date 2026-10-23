@@ -847,7 +847,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let worldRotX = 0.48;
   let worldRotY = -0.62;
   let worldRotZ = -0.52;
-  let camZoom = 6.4; // Perfectly balanced zoom: fits full cube inside canvas without any clipping
+  let camZoom = 8.5; // Optimal zoom ensuring full cube & exploded core fits safely inside canvas without clipping edges
 
   let isOrbiting = false;
   let isDraggingSlice = false;
