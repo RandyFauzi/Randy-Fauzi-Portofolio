@@ -87,33 +87,10 @@
                 </div>
             </div>
 
-            <!-- Floating Collage Area Kanan (Tampil seperti referensi 2D/3D mengambang) -->
-            <div class="hero-collage hidden-mobile">
-                <!-- Card 1 (Tengah Atas Kiri) -->
-                <div class="fc-card fc-card-1 project-hover" style="background-image: url('assets/images/hero-img1.png'); background-position: left center;"></div>
-                <!-- Card 2 (Kanan Atas) -->
-                <div class="fc-card fc-card-2 project-hover" style="background-image: url('assets/images/hero-img2.png'); background-position: center;"></div>
-                <!-- Card 3 (Bawah Kiri) -->
-                <div class="fc-card fc-card-3 project-hover" style="background-image: url('assets/images/hero-img3.png'); background-position: top center;"></div>
-                
-                <!-- Glass Overlay Panel -->
-                <div class="fc-glass">
-                    <ul>
-                        <li class="lang-en">System Automation</li>
-                        <li class="lang-id">Otomatisasi Sistem</li>
-                        <li class="lang-en">Web Development</li>
-                        <li class="lang-id">Pengembangan Web</li>
-                        <li class="lang-en">UI/UX Design</li>
-                        <li class="lang-id">Desain UI/UX</li>
-                    </ul>
-                </div>
-
-                <!-- Round Badge -->
-                <div class="fc-badge">
-                    <span class="year">2026</span>
-                    <span class="text lang-en">Selected<br>Works</span>
-                    <span class="text lang-id">Karya<br>Pilihan</span>
-                </div>
+            <!-- 3D Interactive Rubik's Cube Hero Area ("RANDY" Pure 3D Asset) -->
+            <div class="hero-collage hero-cube-stage">
+                <canvas id="heroCubeCanvas" class="hover-target"></canvas>
+                <canvas id="heroParticleCanvas"></canvas>
             </div>
             
         </div>
@@ -463,5 +440,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/randy-cube-3d.js"></script>
 </body>
 </html>
